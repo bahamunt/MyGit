@@ -47,7 +47,7 @@ ou
 
 ou 
 
-> git add *.<extencao do arquivo>
+> git add *.[extencao do arquivo]
 
 
 == Aplicar o commit ==
