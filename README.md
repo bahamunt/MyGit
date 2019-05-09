@@ -1,10 +1,10 @@
-# Manual de Criacao e Manuseamento de um Projeto Git
+# Manual de Criação e Manuseamento de um Projeto Git
 
-## Introducao
+## INTRODUÇÃO
 
 > Como criar e manusear um projeto Git
 
-## Tutorial
+## FUNÇÕES
 
 == Verificar usuario configurado ==
 > git config user.name 
@@ -163,6 +163,10 @@ ou
 
 
 
-## Links para Mais Informacoes
+## EXTRA: Links para Mais Informacoes
 > https://github.com/joshnh/Git-Commands
+
 > https://rogerdudler.github.io/git-guide/index.pt_BR.html
+
+
+## VERSÃO 1.0 (POR BAHAMUNT)
