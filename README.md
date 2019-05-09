@@ -1,4 +1,4 @@
-# Tutorial de Criacao e Manuseamento do Git
+# Manual de Criacao e Manuseamento do Git
 
 ## Introducao
 
@@ -31,4 +31,21 @@
 ou
 > git add . //adiciona todas as modificacoes ao git
 ou
-> git add -A //adiciona todas as modificacoes trackeadas e não trackeadas ao git
+> git add -a //adiciona e acompanha todas as modificacoes trackeadas e não trackeadas ao git
+ou 
+> git add *.<extencao do arquivo>
+
+== Aplicar o commit ==
+> git commit -m "inicio do projeto" // mensagem de identificacao da alteracao (SEMPRE COLOCA-LO ENTRE ASPAS)
+ou
+> git commit -a "alteracao no README" // primeiro ele olha a arvore de arquivos, notifica as alteracoes e já realiza as acoes 'git.add' e 'git rm' automaticamente
+
+== Verificar qual repositorio ele esta configurado ==
+> git remote -v
+
+== Conectar ao repositorio na nuvem ==
+> git remote add origin https://github.com/bahamunt/MyGit.git // colocar o link do repositorio
+
+
+
+
