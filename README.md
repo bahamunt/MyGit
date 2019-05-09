@@ -8,11 +8,13 @@
 
 == Verificar usuario configurado ==
 > git config user.name 
+
 > git config user.email
 
 
 == Caso não tenha config, realizar os comandos as seguir: ==
 > git config --global user.name "<nome_do_usuario>"
+
 > git config --global user.email "<email_do_usuario>"
 
 
@@ -34,11 +36,17 @@
 
 == Para "trackar" (adicionar) os arquivos ==
 > git add .gitignore //nome do arquivo que vc quer adicionar ao git
+
 ou
+
 > git add .		 //adiciona todas as modificacoes ao git
+
 ou
+
 > git add -A	 //adiciona e acompanha todas as modificacoes trackeadas e não trackeadas ao git
+
 ou 
+
 > git add *.<extencao do arquivo>
 
 
@@ -68,7 +76,9 @@ ou
 
 == Clonar Projeto do Repositorio ==
 > git clone --branch <nome_da_branch> <url_da_branch>
+
 ou 
+
 > git clone --branch <url_da_branch> 	//nesse caso ele sempre pega da master
 
 
@@ -82,7 +92,9 @@ ou
 
 == Deletar Branch Local ==
 > git branch -d <nome_da_branch>
+
 ou
+
 > git branch -D <nome_da_branch>
 
 
@@ -92,7 +104,9 @@ ou
 
 == Deletar a Branch Remoto ==
 > git push --delete origin <nome_da_branch>
+
 ou
+
 > git push origin :<nome_da_branch>
 
 
@@ -106,11 +120,13 @@ ou
 
 == Criacao de Tags (Rotulacao) ==
 > git tag <nome_da_tag> <hash_do_commit> 	//numero_do_commit
+
 > git push --tags origin <nome_da_branch>
 
 
 == Remover as Alteracoes Locais ==
 > git stash							//coloca no cache os arquivos
+
 > git checkout --<nome_do_arquivo> 	//remove o arquivo escolhido
 
 
@@ -124,15 +140,21 @@ ou
 
 == Voltar para um Commit Especifico Remotamente ==
 > git reset --hard <hash_do_commit>
+
 > git add .
+
 > git commit -m "<texto_do_commit>"
+
 > git push -f origin <nome_da_branch> // -f força as substituicoes
 
 
 == Corrigir o Arquivo '.gitignore' ==
 > git rm -r --cached .
+
 > git add .
+
 > git commit -m "<texto_do_commit>"
+
 > git push origin <nome_da_branch>
 
 
