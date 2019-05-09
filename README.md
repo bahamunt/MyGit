@@ -31,7 +31,7 @@
 ou
 > git add . //adiciona todas as modificacoes ao git
 ou
-> git add -a //adiciona e acompanha todas as modificacoes trackeadas e não trackeadas ao git
+> git add -A //adiciona e acompanha todas as modificacoes trackeadas e não trackeadas ao git
 ou 
 > git add *.<extencao do arquivo>
 
@@ -46,6 +46,7 @@ ou
 == Conectar ao repositorio na nuvem ==
 > git remote add origin https://github.com/bahamunt/MyGit.git // colocar o link do repositorio
 
-
+== Verificar mudancas no destino ==
+> git fetch
 
 
