@@ -172,17 +172,17 @@ ou
 
 #====================================================#
 
-|________________________NOTA________________________ |
+> ___NOTA
 
-|...A diferença entre MERGE e REBASE é que enqunato..|
+> A diferença entre __MERGE__ e __REBASE__ é que enqunato
 
-|...o MERGE mescla os projetos e cria um commit, o...|
+> o __MERGE__ mescla os projetos e cria um commit, o
 
-|.REBASE coloca as modificações após o último commit.|
+> __REBASE__ coloca as modificações após o último commit
 
-|............e cria um commit no final...............|
+> e cria um commit no final.
 
-|-(Para mais informações acesse o link 3 dos EXTRAS)-|
+> (Para mais informações acesse o link 3 dos EXTRAS)
 
 #====================================================#
 
@@ -191,7 +191,7 @@ ou
 > gitk
 
 
-## EXTRAS: Links para Mais Informações
+## EXTRAS: Links para Mais __Informações
 >1: https://github.com/joshnh/Git-Commands
 
 >2: https://rogerdudler.github.io/git-guide/index.pt_BR.html
