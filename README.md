@@ -6,16 +6,16 @@
 
 ## FUNÇÕES
 
-== Verificar usuario configurado ==
+== Verificar usuário configurado ==
 > git config user.name 
 
 > git config user.email
 
 
 == Caso não tenha config, realizar os comandos as seguir: ==
-> git config --global user.name "<nome_do_usuario>"
+> git config --global user.name "__<nome_do_usuario>__"
 
-> git config --global user.email "<email_do_usuario>"
+> git config --global user.email "__<email_do_usuario>__"
 
 
 == Inicializar um projeto git ==
@@ -35,139 +35,138 @@
 
 
 == Para "trackar" (adicionar) os arquivos ==
-> git add .gitignore //nome do arquivo que vc quer adicionar ao git
+> git add .gitignore //nome do arquivo que você quer adicionar ao git
 
 ou
 
-> git add .		 //adiciona todas as modificacoes ao git
+> git add .		 //adiciona todas as modificações ao git
 
 ou
 
-> git add -A	 //adiciona e acompanha todas as modificacoes trackeadas e não trackeadas ao git
+> git add -A	 //adiciona e acompanha todas as modificações trackeadas e não trackeadas ao git
 
 ou 
 
-> git add *.[extencao do arquivo]
+> git add *.__<extenção do arquivo>__
 
 
 == Aplicar o commit ==
-> git commit -m "inicio do projeto"	 	// mensagem de identificacao da alteracao (SEMPRE COLOCA-LO ENTRE ASPAS)
+> git commit -m "início do projeto"	 	// mensagem de identificação da alteração (SEMPRE COLOCÁ-LO ENTRE ASPAS)
 
 
 == Ajustar/Reescrever o Commit Local Antes do Push  ==
 > git commit --amend
 
 
-== Verificar qual repositorio ele esta configurado ==
+== Verificar qual repositório ele está configurado ==
 > git remote -v
 
 
-== Conectar ao repositorio na nuvem ==
-> git remote add origin https://github.com/bahamunt/MyGit.git	 // colocar o link do repositorio
+== Conectar ao repositório na nuvem ==
+> git remote add origin https://github.com/bahamunt/MyGit.git	 // colocar o link do repositório
 
 
-== Verificar mudancas no destino ==
-> git fetch origin <destino>
+== ___Verificar___ mudanças no destino ==
+> git fetch origin __<destino>__
 
 
-== Baixar as mudancas no destino ==
-> git pull origin <destino>
+== ___Baixar___ as mudanças no destino ==
+> git pull origin __<destino>__
 
 
 == Visualizar todos os commits ==
 > git log
 
 
-== Clonar Projeto do Repositorio ==
-> git clone --branch <nome_da_branch> <url_da_branch>
+== Clonar Projeto do Repositório ==
+> git clone --branch __<nome_da_branch> <url_da_branch>__
 
 ou 
 
-> git clone --branch <url_da_branch> 	//nesse caso ele sempre pega da master
+> git clone --branch __<url_da_branch>__ 	//nesse caso ele sempre pega da master
 
 
-== Trocar de Branch Local ==
-> git checkout <nome_da_branch>
+== _Trocar_ de Branch Local ==
+> git checkout __<nome_da_branch>__
 
 
-== Criar Nova Branch Local ==
+== _Criar_ Nova Branch Local ==
 > git checkout -b <nome_da_branch>
 
 
-== Deletar Branch Local ==
-> git branch -d <nome_da_branch>
+== _Deletar_ Branch Local ==
+> git branch -d __<nome_da_branch>__
 
 ou
 
-> git branch -D <nome_da_branch>
+> git branch -D __<nome_da_branch>__
 
-
-== Subir a Nova Branch Local para a Nova Branch no Repositorio (Remoto) ==
-> git push origin <nome_da_branch>
+== Subir a Nova Branch Local para a Nova Branch no Repositório (Remoto) ==
+> git push origin __<nome_da_branch>__
 
 
 == Deletar a Branch Remoto ==
-> git push --delete origin <nome_da_branch>
+> git push --delete origin __<nome_da_branch>__
 
 ou
 
-> git push origin :<nome_da_branch>
+> git push origin :__<nome_da_branch>__
 
 
 == Comparar Branch ==
-> git diff <branch_raiz> <branch_destino>
+> git diff __<branch_raiz> <branch_destino>__
 
 
-== Comparar Diferencas Dentro de uma Branch ==
+== Comparar Diferenças Dentro de uma Branch ==
 > git diff
 
 
-== Criacao de Tags (Rotulacao) ==
-> git tag <nome_da_tag> <hash_do_commit> 	//numero_do_commit
+== Criação de Tags (Rotulação) ==
+> git tag __<nome_da_tag> <hash_do_commit>__ 	//hash_do_commit = número_do_commit
 
-> git push --tags origin <nome_da_branch>
+> git push --tags origin __<nome_da_branch>__
 
 
-== Remover as Alteracoes Locais ==
+== Remover as Alterações Locais ==
 > git stash							//coloca no cache os arquivos
 
-> git checkout --<nome_do_arquivo> 	//remove o arquivo escolhido
+> git checkout --__<nome_do_arquivo>__ 	//remove o arquivo escolhido
 
 
-== Remover PERMANENTEMENTE as Alteracoes Locais  ==
-> git reset --hard 					//remove todas as alteracoes
+== Remover __PERMANENTEMENTE__ as Alterações Locais  ==
+> git reset --hard 					//remove todas as alterações
 
 
-== Voltar para um Commit Especifico Localmente ==
-> git reset --hard <hash_do_commit>	//elimina os commits posteriores ao hash selecionado
+== Voltar para um Commit Específico Localmente ==
+> git reset --hard __<hash_do_commit>__	//elimina os commits posteriores ao hash selecionado
 
 
 == Voltar para um Commit Especifico Remotamente ==
-> git reset --hard <hash_do_commit>
+> git reset --hard __<hash_do_commit>__
 
 > git add .
 
-> git commit -m "<texto_do_commit>"
+> git commit -m "__<texto_do_commit>__"
 
-> git push -f origin <nome_da_branch> // -f força as substituicoes
+> git push -f origin __<nome_da_branch>__ //-f (força as substituições)
 
 
-== Corrigir o Arquivo '.gitignore' ==
+== Corrigir o Arquivo ___.gitignore___ ==
 > git rm -r --cached .
 
 > git add .
 
-> git commit -m "<texto_do_commit>"
+> git commit -m "__<texto_do_commit>__"
 
-> git push origin <nome_da_branch>
+> git push origin __<nome_da_branch>__
 
 
 == Merge de Branchs ==
-> git merge <nome_da_branch> //OBS: é necessario estar na Branch que você quer receber as modificacoes e aplicar esse comando sempre chamando a branch que deseja juntar
+> git merge __<nome_da_branch>__ //OBS: é necessário estar na Branch que você quer receber as modificações e aplicar esse comando sempre chamando a branch que deseja juntar
 
 
 == Rebase de Branchs ==
-> git rebase <nome_da_branch>
+> git rebase __<nome_da_branch>__
 
 
 #====================================================#
@@ -182,16 +181,16 @@ ou
 
 > e cria um commit no final.
 
-> (Para mais informações acesse o link 3 dos EXTRAS)
+> (Para mais informações acesse o _link 3_ dos EXTRAS)
 
 #====================================================#
 
 
-== Interface Gráfica Padrão ==
+== Exibir Interface Gráfica ==
 > gitk
 
 
-## EXTRAS: Links para Mais __Informações
+## EXTRAS: Links para Mais Informações
 >1: https://github.com/joshnh/Git-Commands
 
 >2: https://rogerdudler.github.io/git-guide/index.pt_BR.html
@@ -199,4 +198,4 @@ ou
 >3: https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c
 
 
-## VERSÃO 1.1 (POR BAHAMUNT)
+## VERSÃO 1.2 (POR _BAHAMUNT_)
