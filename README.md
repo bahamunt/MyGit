@@ -172,7 +172,7 @@ ou
 
 #====================================================#
 
-> ___NOTA
+> ___NOTA___
 
 > A diferença entre __MERGE__ e __REBASE__ é que enqunato
 
