@@ -172,19 +172,17 @@ ou
 
 #====================================================#
 
-|				  -----NOTA-----					 |
+|------------------------NOTA------------------------|
 
-|   A diferença entre MERGE e REBASE é que enqunato  |
+|...A diferença entre MERGE e REBASE é que enqunato..|
 
-|   o MERGE mescla os projetos e cria um commit, o	 |
+|...o MERGE mescla os projetos e cria um commit, o...|
 
-| REBASE coloca as modificações após o último commit |
+|.REBASE coloca as modificações após o último commit.|
 
-| 			e cria um commit no final.				 |
+|............e cria um commit no final...............|
 
-| (Para mais informações acesse o link 3 ao final do |
-
-| 					documento).						 |
+|-(Para mais informações acesse o link 3 dos EXTRAS)-|
 
 #====================================================#
 
@@ -192,8 +190,6 @@ ou
 == Interface Gráfica Padrão ==
 > gitk
 
-
-==  ==
 
 ## EXTRAS: Links para Mais Informações
 >1: https://github.com/joshnh/Git-Commands
@@ -203,4 +199,4 @@ ou
 >3: https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c
 
 
-## VERSÃO 1.0 (POR BAHAMUNT)
+## VERSÃO 1.1 (POR BAHAMUNT)
