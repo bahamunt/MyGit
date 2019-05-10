@@ -54,6 +54,10 @@ ou
 > git commit -m "inicio do projeto"	 	// mensagem de identificacao da alteracao (SEMPRE COLOCA-LO ENTRE ASPAS)
 
 
+== Ajustar/Reescrever o Commit Local Antes do Push  ==
+> git commit --amend
+
+
 == Verificar qual repositorio ele esta configurado ==
 > git remote -v
 
@@ -158,15 +162,45 @@ ou
 > git push origin <nome_da_branch>
 
 
+== Merge de Branchs ==
+> git merge <nome_da_branch> //OBS: é necessario estar na Branch que você quer receber as modificacoes e aplicar esse comando sempre chamando a branch que deseja juntar
+
+
+== Rebase de Branchs ==
+> git rebase <nome_da_branch>
+
+
+#====================================================#
+
+|				  -----NOTA-----					 |
+
+|   A diferença entre MERGE e REBASE é que enqunato  |
+
+|   o MERGE mescla os projetos e cria um commit, o	 |
+
+| REBASE coloca as modificações após o último commit |
+
+| 			e cria um commit no final.				 |
+
+| (Para mais informações acesse o link 3 ao final do |
+
+| 					documento).						 |
+
+#====================================================#
+
+
 == Interface Gráfica Padrão ==
 > gitk
 
 
+==  ==
 
-## EXTRA: Links para Mais Informacoes
-> https://github.com/joshnh/Git-Commands
+## EXTRAS: Links para Mais Informações
+>1: https://github.com/joshnh/Git-Commands
 
-> https://rogerdudler.github.io/git-guide/index.pt_BR.html
+>2: https://rogerdudler.github.io/git-guide/index.pt_BR.html
+
+>3: https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c
 
 
 ## VERSÃO 1.0 (POR BAHAMUNT)
