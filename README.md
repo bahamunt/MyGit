@@ -54,12 +54,14 @@ ou
 > git commit -m "início do projeto"	 	// mensagem de identificação da alteração (SEMPRE COLOCÁ-LO ENTRE ASPAS)
 
 
-== Ajustar/Reescrever o Commit Local Antes do Push  ==
+== Ajustar/Reescrever/Reverter o Commit Local Antes do Push  ==
 > git commit --amend
 
 ou
 
 > git commit --amend -m "__<texto_do_commit>__"
+
+> (Para mais informações acesse o __link 5__ e __link 6__)
 
 
 == Verificar qual repositório ele está configurado ==
@@ -203,4 +205,8 @@ ou
 
 >4: https://brorlandi.github.io/git-desfazendo-commits
 
-## VERSÃO 1.2 (POR _BAHAMUNT_)
+>5: https://help.github.com/en/articles/changing-a-commit-message
+
+>6: https://www.atlassian.com/git/tutorials/rewriting-history
+
+## VERSÃO 1.3 (POR __BAHAMUNT__ & __Marcelo Nidal__)
