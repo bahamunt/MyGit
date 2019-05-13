@@ -151,6 +151,10 @@ ou
 > git push -f origin __<nome_da_branch>__ //-f (força as substituições)
 
 
+== Desfazer o Commit ==
+> git checkout --a__<noeme_do_arquivo>__
+
+
 == Corrigir o Arquivo ___.gitignore___ ==
 > git rm -r --cached .
 
@@ -197,5 +201,6 @@ ou
 
 >3: https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c
 
+>4: https://brorlandi.github.io/git-desfazendo-commits
 
 ## VERSÃO 1.2 (POR _BAHAMUNT_)
