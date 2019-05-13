@@ -57,6 +57,10 @@ ou
 == Ajustar/Reescrever o Commit Local Antes do Push  ==
 > git commit --amend
 
+ou
+
+> git commit --amend -m "__<texto_do_commit>__"
+
 
 == Verificar qual repositório ele está configurado ==
 > git remote -v
@@ -149,10 +153,6 @@ ou
 > git commit -m "__<texto_do_commit>__"
 
 > git push -f origin __<nome_da_branch>__ //-f (força as substituições)
-
-
-== Desfazer o Commit ==
-> git checkout --a__<noeme_do_arquivo>__
 
 
 == Corrigir o Arquivo ___.gitignore___ ==
