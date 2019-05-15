@@ -92,15 +92,19 @@ ou
 > git clone --branch __<url_da_branch>__ 	//nesse caso ele sempre pega da master
 
 
-== _Trocar_ de Branch Local ==
+== __Visualizar__ Branchs existentes ==
+> git branch -a
+
+
+== __Trocar__ de Branch Local ==
 > git checkout __<nome_da_branch>__
 
 
-== _Criar_ Nova Branch Local ==
+== __Criar__ Nova Branch Local ==
 > git checkout -b <nome_da_branch>
 
 
-== _Deletar_ Branch Local ==
+== __Deletar__ Branch Local ==
 > git branch -d __<nome_da_branch>__
 
 ou
@@ -135,10 +139,29 @@ ou
 > git rev-parse --short HEAD
 
 
-== Criação de Tags (Rotulação) ==
+== Criação de __Tags__ (Rotulação) ==
 > git tag __<nome_da_tag> <hash_do_commit>__ 	//hash_do_commit = número_do_commit
 
 > git push --tags origin __<nome_da_branch>__
+
+
+== Deletar __Tag Local__ ==
+> git tag -d __<nome_da_tag>__
+
+
+== Deletar __Tag no Repositorio__ ==
+> git push origin :__<nome_da_tag>__
+
+
+== Correção de Conflito para __Tag__ e __Branch__ com o Mesmo Nome ==
+PARA DELETAR _Tag_ :
+
+> git push origin :refs/tags/__<nome_da_tag>__
+
+
+PARA DELETAR _Branch_ :
+
+> git push origin :refs/heads/__<nome_da_branch>__
 
 
 == Remover as Alterações Locais ==
@@ -165,6 +188,51 @@ ou
 > git push -f origin __<nome_da_branch>__ //-f (força as substituições)
 
 
+== Editar Commit no Repositório ==
+> git rebase -i HEAD~n  //n = quantidade de commit que deseja rever a partir do último head
+
+
+#================================================================#
+
+> ___NOTA___
+
+> rebase -i = ações interativas do rabase;
+
+> Os comandos de refaturação aceitos:
+
+> p(pick) = usar o commit atual para não alterar;
+
+> r(reword) = usa o commit e edita a mensagem;
+
+> e(edit) = usa o commit, mas não faz o amend;
+
+> s(squash) = usa o commit, mas mescla com o commit anterior
+
+> f(fixup) = semelhante ao _squash_, mas descarta o log de commit
+
+> ___EXEMPLO___ 
+
+> git rebase -i HEAD~2
+
+> //Aparecerá os dois últimos commits no modo de edição:
+
+> pick e499d89 Delete CNAME
+
+> pick 0c39034 Better README
+
+> //Escolhe qual commit deseja alterar:
+
+> reword 0c39034 __<novo_texto>__
+
+> //A cada alteração salve e feche a lista de commits.
+
+> //Atualize o repositório com o comando:
+
+> git push --force
+
+#================================================================#
+
+
 == Corrigir o Arquivo ___.gitignore___ ==
 > git rm -r --cached .
 
@@ -183,7 +251,7 @@ ou
 > git rebase __<nome_da_branch>__
 
 
-#====================================================#
+#=========================================================#
 
 > ___NOTA___
 
@@ -197,7 +265,7 @@ ou
 
 > (Para mais informações acesse o _link 3_ dos EXTRAS)
 
-#====================================================#
+#========================================================#
 
 
 == Exibir Interface Gráfica ==
@@ -217,4 +285,4 @@ ou
 
 >6: https://www.atlassian.com/git/tutorials/rewriting-history
 
-## VERSÃO 1.3 (POR __BAHAMUNT__ & __Marcelo Nidal__)
+## VERSÃO 1.4 (POR __BAHAMUNT__ & __Marcelo Nidal__)
