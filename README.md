@@ -154,6 +154,7 @@ ou
 
 
 == Correção de Conflito para __Tag__ e __Branch__ com o Mesmo Nome ==
+
 PARA DELETAR _Tag_ :
 
 > git push origin :refs/tags/__<nome_da_tag>__
@@ -209,6 +210,7 @@ PARA DELETAR _Branch_ :
 > s(squash) = usa o commit, mas mescla com o commit anterior
 
 > f(fixup) = semelhante ao _squash_, mas descarta o log de commit
+
 
 > ___EXEMPLO___ 
 
