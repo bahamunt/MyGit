@@ -127,6 +127,14 @@ ou
 > git diff
 
 
+== Visualizar o HEAD __COMPLETO__ de um Commit ==
+> git rev-parse HEAD
+
+
+== Visualizar o HEAD __CURTO__ de um Commit ==
+> git rev-parse --short HEAD
+
+
 == Criação de Tags (Rotulação) ==
 > git tag __<nome_da_tag> <hash_do_commit>__ 	//hash_do_commit = número_do_commit
 
