@@ -89,7 +89,7 @@ ou
 
 ou 
 
-> git clone --branch __<url_da_branch>__ 	//nesse caso ele sempre pega da master
+> git clone __<url_da_branch>__ 	//nesse caso ele sempre pega da master
 
 
 == __Visualizar__ Branchs existentes ==
