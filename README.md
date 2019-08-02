@@ -269,10 +269,16 @@ PARA DELETAR _Branch_ :
 
 #========================================================#
 
-
 == Exibir Interface Gráfica ==
 > gitk
 
+#========= RESUMO DE COMO USAR O COMMIT E PUSH ==========#
+> Estar na pasta desejada
+> git status = mostra o que foi alterado
+> git add . = adiciona as alterações
+> git commit -m " xxxxx "
+> git push origin master
+#========================================================#
 
 ## EXTRAS: Links para Mais Informações
 >1: https://github.com/joshnh/Git-Commands
@@ -287,4 +293,4 @@ PARA DELETAR _Branch_ :
 
 >6: https://www.atlassian.com/git/tutorials/rewriting-history
 
-## VERSÃO 1.4 (POR __BAHAMUNT__ & __Marcelo Nidal__)
+## VERSÃO 1.5 (POR __BAHAMUNT__ & __Marcelo Nidal__)
