@@ -4,37 +4,44 @@
 
 > Como criar e manusear um projeto Git
 
-## FUNÇÕES
 
-== Verificar usuário configurado ==
+## I- ALGUMAS FUNÇÕES
+
+== Exibir Interface Gráfica ==
+> gitk
+
+
+== Verificar ___usuário configurado___ ==
 > git config user.name 
 
 > git config user.email
 
 
-== Caso não tenha config, realizar os comandos as seguir: ==
+== Caso ___não tenha config___, realizar os comandos as seguir: ==
 > git config --global user.name "__<nome_do_usuario>__"
 
 > git config --global user.email "__<email_do_usuario>__"
 
 
-== Inicializar um projeto git ==
+## II- O PROJETO GIT E SEUS ARQUIVOS
+
+== ___Inicializar___ um projeto git ==
 > git init 
 
 
-== Criar o arquivo .gitignore ==
-> touch .gitignore
-
-
-== Criar o arquivo README ==
-> touch README.md
-
-
-== Verificar os status do projeto ==
+== ___Verificar___ os status do projeto ==
 > git status
 
 
-== Para "trackar" (adicionar) os arquivos ==
+== Criar o arquivo ___.gitignore___ ==
+> touch .gitignore
+
+
+== Criar o arquivo ___README___ ==
+> touch README.md
+
+
+== Para ___"trackar" (adicionar)___ os arquivos ==
 > git add .gitignore //nome do arquivo que você quer adicionar ao git
 
 ou
@@ -50,11 +57,13 @@ ou
 > git add *.__<extenção do arquivo>__
 
 
-== Aplicar o commit ==
+## III. COMMIT
+
+== ___Aplicar___ o commit ==
 > git commit -m "início do projeto"	 	// mensagem de identificação da alteração (SEMPRE COLOCÁ-LO ENTRE ASPAS)
 
 
-== Ajustar/Reescrever/Reverter o Commit Local Antes do Push  ==
+== ___Ajustar/Reescrever/Reverter___ o Commit Local Antes do Push  ==
 > git commit --amend
 
 ou
@@ -64,11 +73,13 @@ ou
 > (Para mais informações acesse o __link 5__ e __link 6__)
 
 
-== Verificar qual repositório ele está configurado ==
+## IV. REPOSITÓRIO
+
+== ___Verificar___ qual repositório está configurado ==
 > git remote -v
 
 
-== Conectar ao repositório na nuvem ==
+== ___Conectar___ ao repositório na nuvem ==
 > git remote add origin https://github.com/bahamunt/MyGit.git	 // colocar o link do repositório
 
 
@@ -80,11 +91,11 @@ ou
 > git pull origin __<destino>__
 
 
-== Visualizar todos os commits ==
+== ___Visualizar___ todos os commits ==
 > git log
 
 
-== Clonar Projeto do Repositório ==
+== ___Clonar Projeto___ do Repositório ==
 > git clone --branch __<nome_da_branch> <url_da_branch>__
 
 ou 
@@ -92,7 +103,7 @@ ou
 > git clone __<url_da_branch>__ 	//nesse caso ele sempre pega da master
 
 
-== __Visualizar__ Branchs existentes ==
+== ___Visualizar___ Branchs existentes ==
 > git branch -a
 
 
@@ -111,11 +122,11 @@ ou
 
 > git branch -D __<nome_da_branch>__
 
-== Subir a Nova Branch Local para a Nova Branch no Repositório (Remoto) ==
+== __Subir__ a Nova Branch Local para a Nova Branch no Repositório (Remoto) ==
 > git push origin __<nome_da_branch>__
 
 
-== Deletar a Branch Remoto ==
+== __Deletar__ a Branch Remoto ==
 > git push --delete origin __<nome_da_branch>__
 
 ou
@@ -267,17 +278,20 @@ PARA DELETAR _Branch_ :
 
 > (Para mais informações acesse o _link 3_ dos EXTRAS)
 
-#========================================================#
+#--------------------------------------------------------#
 
-== Exibir Interface Gráfica ==
-> gitk
+> __RESUMO DE COMO USAR OS COMANDOS COMMIT E PUSH__
 
-#========= RESUMO DE COMO USAR O COMMIT E PUSH ==========#
-> Estar na pasta desejada
-> git status = mostra o que foi alterado
-> git add . = adiciona as alterações
+> Estar na branch desejada
+
+> git status //mostra o que foi alterado
+
+> git add . //adiciona as alterações
+
 > git commit -m " xxxxx "
-> git push origin master
+
+> git push origin __<nome_da_branch>__
+
 #========================================================#
 
 ## EXTRAS: Links para Mais Informações
