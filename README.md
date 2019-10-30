@@ -73,6 +73,49 @@ ou
 > (Para mais informações acesse o __link 5__ e __link 6__)
 
 
+== Voltar para um Commit Específico Localmente ==
+> git reset --hard __<hash_do_commit>__   //elimina os commits posteriores ao hash selecionado
+
+
+== Voltar para um Commit Especifico Remotamente ==
+> git reset --hard __<hash_do_commit>__
+
+> git add .
+
+> git commit -m "__<texto_do_commit>__"
+
+> git push -f origin __<nome_da_branch>__   //-f (força as substituições)
+
+
+== Editar Commit no Repositório ==
+> git rebase -i HEAD~n    //n = quantidade de commit que deseja rever a partir do último head
+
+
+== Deletar o histórico de Commit no Repositório do Github ==
+
++------------ __AVISO__ ------------+
+
+| Esta ação removerá completamente  |
+
+| seus antigos commits. Não podendo |
+
+| ser possível recuperá-los.        |
+
++-----------------------------------+
+
+> git checkout --orphan temp_branch   //Criando uma nova branch que não é mostrada pelo comando 'git branch'
+
+> git add -A    //Add todos os arquivos na nova branch criada
+
+> git commit -am "o primeiro commit"    //add uma nova commit
+
+> git branch -D master    //deleta a branch master do seu repositório git
+
+> git branch -m master    //após deletar a master, vamos renomear a nova branch para __master__
+
+> git push -f origin master   //após todas essas mudanças, forçe um push com suas novas mudanças e pronto!
+
+
 ## IV. REPOSITÓRIO
 
 == ___Verificar___ qual repositório está configurado ==
@@ -142,6 +185,8 @@ ou
 > git diff
 
 
+## V. HEAD
+
 == Visualizar o HEAD __COMPLETO__ de um Commit ==
 > git rev-parse HEAD
 
@@ -149,6 +194,8 @@ ou
 == Visualizar o HEAD __CURTO__ de um Commit ==
 > git rev-parse --short HEAD
 
+
+## VI. TAGS
 
 == Criação de __Tags__ (Rotulação) ==
 > git tag __<nome_da_tag> <hash_do_commit>__ 	//hash_do_commit = número_do_commit
@@ -164,6 +211,16 @@ ou
 > git push origin :__<nome_da_tag>__
 
 
+## VII. BRANCHS
+
+== Merge de Branchs ==
+> git merge __<nome_da_branch>__ //OBS: é necessário estar na Branch que você quer receber as modificações e aplicar esse comando sempre chamando a branch que deseja juntar
+
+
+== Rebase de Branchs ==
+> git rebase __<nome_da_branch>__
+
+
 == Correção de Conflito para __Tag__ e __Branch__ com o Mesmo Nome ==
 
 PARA DELETAR _Tag_ :
@@ -176,6 +233,8 @@ PARA DELETAR _Branch_ :
 > git push origin :refs/heads/__<nome_da_branch>__
 
 
+## VII. ALTERAÇÕES
+
 == Remover as Alterações Locais ==
 > git stash							//coloca no cache os arquivos
 
@@ -186,22 +245,16 @@ PARA DELETAR _Branch_ :
 > git reset --hard 					//remove todas as alterações
 
 
-== Voltar para um Commit Específico Localmente ==
-> git reset --hard __<hash_do_commit>__	//elimina os commits posteriores ao hash selecionado
+## VIII. ALTERAÇÕES
 
-
-== Voltar para um Commit Especifico Remotamente ==
-> git reset --hard __<hash_do_commit>__
+== Corrigir o Arquivo ___.gitignore___ ==
+> git rm -r --cached .
 
 > git add .
 
 > git commit -m "__<texto_do_commit>__"
 
-> git push -f origin __<nome_da_branch>__ //-f (força as substituições)
-
-
-== Editar Commit no Repositório ==
-> git rebase -i HEAD~n  //n = quantidade de commit que deseja rever a partir do último head
+> git push origin __<nome_da_branch>__
 
 
 #================================================================#
@@ -223,7 +276,7 @@ PARA DELETAR _Branch_ :
 > f(fixup) = semelhante ao _squash_, mas descarta o log de commit
 
 
-> ___EXEMPLO___ 
+> ___EXEMPLO 1___ 
 
 > git rebase -i HEAD~2
 
@@ -246,22 +299,7 @@ PARA DELETAR _Branch_ :
 #================================================================#
 
 
-== Corrigir o Arquivo ___.gitignore___ ==
-> git rm -r --cached .
 
-> git add .
-
-> git commit -m "__<texto_do_commit>__"
-
-> git push origin __<nome_da_branch>__
-
-
-== Merge de Branchs ==
-> git merge __<nome_da_branch>__ //OBS: é necessário estar na Branch que você quer receber as modificações e aplicar esse comando sempre chamando a branch que deseja juntar
-
-
-== Rebase de Branchs ==
-> git rebase __<nome_da_branch>__
 
 
 #=========================================================#
@@ -307,4 +345,6 @@ PARA DELETAR _Branch_ :
 
 >6: https://www.atlassian.com/git/tutorials/rewriting-history
 
-## VERSÃO 1.5 (POR __BAHAMUNT__ & __Marcelo Nidal__)
+>7: https://tecadmin.net/delete-commit-history-in-github/
+
+## VERSÃO 1.6 (POR __BAHAMUNT__ & __Marcelo Nidal__)
