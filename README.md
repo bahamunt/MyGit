@@ -256,6 +256,11 @@ PARA DELETAR _Branch_ :
 
 > git push origin __<nome_da_branch>__
 
+## IX. ALTERANDO O REPOSITÓRIO REMOTO(origin)
+
+> git remote rm origin
+
+> git remote add origin __<novo_repositório_a_ser_apontado.git>__
 
 #================================================================#
 
@@ -347,4 +352,4 @@ PARA DELETAR _Branch_ :
 
 >7: https://tecadmin.net/delete-commit-history-in-github/
 
-## VERSÃO 1.6 (POR __BAHAMUNT__ & __Marcelo Nidal__)
+## VERSÃO 1.6 (POR __Thales Samuel__ & __Marcelo Nidal__)
